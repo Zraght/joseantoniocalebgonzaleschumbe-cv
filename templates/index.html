@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joseantonio Caleb Gonzales Chumbe_CV</title>
+  
+  <!-- Favicon generado inline usando el mismo SVG del logo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGZpbHRlciBpZD0ic2hhZG93IiB4PSItNTAlIiB5PSItNTAlIiB3aWR0aD0iMjAwJSIgaGVpZ2h0PSIyMDAlIj48ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI0IiBmbG9vZC1jb2xvcj0iIzAwMDAwMCIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+PC9maWx0ZXI+PC9kZWZzPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjU4IiBmaWxsPSIjMDAwMDAwIiBmaWx0ZXI9InVybCgjc2hhZG93KSIvPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjUyIiBmaWxsPSIjMWEzNjVkIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJjNTI4MiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iNDQiIHk9Ijc1IiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iNDgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5KPC90ZXh0Pjx0ZXh0IHg9Ijc2IiB5PSI3NSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RzwvdGV4dD48L3N2Zz4=">
+  
+  <style>
+    /* ===== ESTILOS PARA CV - JOSEANTONIO CALEB GONZALES CHUMBE ===== */
+
+    /* Reset y configuración base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.6;
+      color: #e0e6ed;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      animation: pageLoad 0.5s ease-out;
+    }
+
+    @keyframes pageLoad {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      text-align: center;
+      background: linear-gradient(145deg, #2c3e50 0%, #34495e 100%);
+      color: #ffffff;
+      padding: 50px 30px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      border: 1px solid #4a5568;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255,255,255,0.02);
+      pointer-events: none;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 2.4em;
+      margin-bottom: 15px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      font-family: 'Georgia', serif;
+    }
+
+    #cv-title-es, 
+    #cv-title-en {
+      color: #cbd5e0;
+      font-size: 1.2em;
+      font-style: italic;
+      margin-top: 15px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    /* ===== BOTÓN DE IDIOMA ===== */
+    #btn-lang {
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      background: linear-gradient(145deg, #1a365d, #2d3748);
+      color: #ffffff;
+      border: 1px solid #4a5568;
+      padding: 14px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+      font-family: 'Georgia', serif;
+      letter-spacing: 0.5px;
+    }
+
+    #btn-lang:hover {
+      background: linear-gradient(145deg, #2c5282, #4a5568);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    /* ===== SECCIONES ===== */
+    section {
+      background: linear-gradient(145deg, #2d3748, #4a5568);
+      color: #e2e8f0;
+      margin: 30px 0;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      border: 1px solid #4a5568;
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #1a365d, #2c5282);
+    }
+
+    section:hover {
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      transform: translateY(-3px);
+      background: linear-gradient(145deg, #374151, #4b5563);
+    }
+
+    /* ===== TÍTULOS ===== */
+    h2 {
+      color: #ffffff;
+      font-size: 1.6em;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #4a5568;
+      font-weight: 400;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    /* ===== LISTAS ===== */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: linear-gradient(145deg, #1a202c, #2d3748);
+      color: #e2e8f0;
+      margin: 18px 0;
+      padding: 25px;
+      border-radius: 8px;
+      border-left: 3px solid #2c5282;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+
+    li:hover {
+      background: linear-gradient(145deg, #2d3748, #374151);
+      transform: translateX(8px);
+      border-left-color: #3182ce;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* ===== PÁRRAFOS ===== */
+    p {
+      margin: 18px 0;
+      color: #cbd5e0;
+      font-size: 1.05em;
+      line-height: 1.8;
+      font-family: 'Georgia', serif;
+    }
+
+    /* ===== SECCIÓN DE CONTACTO ===== */
+    section#contacto-es p, 
+    section#contacto-en p {
+      background: linear-gradient(145deg, #1a202c, #2d3748);
+      color: #ffffff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      border-left: 3px solid #2c5282;
+      margin: 15px 0;
+      font-weight: 500;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      font-size: 1.05em;
+    }
+
+    /* ===== ANIMACIONES ===== */
+    .fade-in {
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+      }
+      to { 
+        opacity: 1; 
+        transform: translateY(0); 
+      }
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+      
+      header {
+        padding: 25px 15px;
+      }
+      
+      h1 {
+        font-size: 1.8em;
+      }
+      
+      section {
+        padding: 20px;
+        margin: 15px 0;
+      }
+      
+      #btn-lang {
+        position: static;
+        margin: 20px auto 0;
+        display: block;
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6em;
+      }
+      
+      section {
+        padding: 15px;
+      }
+      
+      li {
+        padding: 15px;
+      }
+    }
+
+    /* ===== ESTADO DE IMPRESIÓN ===== */
+    @media print {
+      body {
+        background: white;
+        color: black;
+        max-width: none;
+        padding: 0;
+      }
+      
+      #btn-lang {
+        display: none;
+      }
+      
+      section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+      }
+      
+      section:hover {
+        transform: none;
+      }
+    }
+
+    /* ===== UTILIDADES ===== */
+    .text-center {
+      text-align: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    /* ===== ACCESIBILIDAD ===== */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* Focus states para accesibilidad */
+    #btn-lang:focus,
+    section:focus-within {
+      outline: 2px solid #333;
+      outline-offset: 2px;
+    }
+
+    /* ===== MEJORAS ADICIONALES ===== */
+    /* Efecto suave en el scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Selección de texto personalizada */
+    ::selection {
+      background: #2c5282;
+      color: #ffffff;
+    }
+
+    ::-moz-selection {
+      background: #2c5282;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+          </filter>
+        </defs>
+        <circle cx="60" cy="60" r="58" fill="#000000" filter="url(#shadow)"/>
+        <circle cx="60" cy="60" r="52" fill="#1a365d"/>
+        <circle cx="60" cy="60" r="52" fill="none" stroke="#2c5282" stroke-width="2"/>
+        <text x="44" y="75" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">J</text>
+        <text x="76" y="75" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">G</text>
+      </svg>
+    </div>
+    <h1>Joseantonio Caleb Gonzales Chumbe</h1>
+    <p id="cv-title-es">Currículum Vitae</p>
+    <p id="cv-title-en" style="display:none;">Curriculum Vitae</p>
+  </header>
+
+  <button id="btn-lang">English</button>
+
+  <!-- Perfil -->
+  <section id="perfil-es">
+    <h2>Perfil Profesional</h2>
+    <p>Ingeniero de sistemas con 5 años de experiencia en ciberseguridad.</p>
+  </section>
+  <section id="perfil-en" style="display:none;">
+    <h2>Professional Profile</h2>
+    <p>Systems engineer with 5 years of experience in cybersecurity.</p>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experiencia-es">
+    <h2>Experiencia Laboral</h2>
+    <ul>
+      <li>Analista de Seguridad en XYZ Corp (2021 - Presente) — Análisis y mitigación de riesgos.</li>
+      <li>Especialista en Soporte TI en ABC Ltd (2018 - 2021) — Gestión de redes y soporte.</li>
+    </ul>
+  </section>
+  <section id="experiencia-en" style="display:none;">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>Security Analyst at XYZ Corp (2021 - Present) — Risk analysis and mitigation.</li>
+      <li>IT Support Specialist at ABC Ltd (2018 - 2021) — Network management and user support.</li>
+    </ul>
+  </section>
+
+  <!-- Educación -->
+  <section id="educacion-es">
+    <h2>Formación Académica</h2>
+    <ul>
+      <li>Ingeniería de Sistemas, Universidad Nacional, 2018</li>
+    </ul>
+  </section>
+  <section id="educacion-en" style="display:none;">
+    <h2>Education</h2>
+    <ul>
+      <li>Systems Engineering, National University, 2018</li>
+    </ul>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto-es">
+    <h2>Contacto</h2>
+    <p>Correo: tu.email@ejemplo.com</p>
+    <p>Teléfono: +51 9xxxxxxx</p>
+  </section>
+  <section id="contacto-en" style="display:none;">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>Phone: +51 9xxxxxxx</p>
+  </section>
+
+  <script>
+    const btnLang = document.getElementById('btn-lang');
+    btnLang.addEventListener('click', () => {
+      const isSpanish = document.getElementById('perfil-es').style.display !== 'none';
+
+      // Toggle display of Spanish sections
+      document.getElementById('perfil-es').style.display = isSpanish ? 'none' : 'block';
+      document.getElementById('experiencia-es').style.display = isSpanish ? 'none' : 'block';
+      document.getElementById('educacion-es').style.display = isSpanish ? 'none' : 'block';
+      document.getElementById('contacto-es').style.display = isSpanish ? 'none' : 'block';
+      document.getElementById('cv-title-es').style.display = isSpanish ? 'none' : 'block';
+
+      // Toggle display of English sections
+      document.getElementById('perfil-en').style.display = isSpanish ? 'block' : 'none';
+      document.getElementById('experiencia-en').style.display = isSpanish ? 'block' : 'none';
+      document.getElementById('educacion-en').style.display = isSpanish ? 'block' : 'none';
+      document.getElementById('contacto-en').style.display = isSpanish ? 'block' : 'none';
+      document.getElementById('cv-title-en').style.display = isSpanish ? 'block' : 'none';
+
+      // Change button text
+      btnLang.textContent = isSpanish ? 'Español' : 'English';
+    });
+  </script>
+</body>
+</html>
