@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joseantonio Caleb Gonzales Chumbe_CV</title>
+  <title>Joseantonio Caleb Gonzales Chumbe - CV</title>
   
   <!-- Favicon generado inline usando el mismo SVG del logo -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGZpbHRlciBpZD0ic2hhZG93IiB4PSItNTAlIiB5PSItNTAlIiB3aWR0aD0iMjAwJSIgaGVpZ2h0PSIyMDAlIj48ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI0IiBmbG9vZC1jb2xvcj0iIzAwMDAwMCIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+PC9maWx0ZXI+PC9kZWZzPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjU4IiBmaWxsPSIjMDAwMDAwIiBmaWx0ZXI9InVybCgjc2hhZG93KSIvPjxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjUyIiBmaWxsPSIjMWEzNjVkIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJjNTI4MiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iNDQiIHk9Ijc1IiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iNDgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5KPC90ZXh0Pjx0ZXh0IHg9Ijc2IiB5PSI3NSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RzwvdGV4dD48L3N2Zz4=">
@@ -25,7 +25,7 @@
       background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
       background-attachment: fixed;
       min-height: 100vh;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 20px;
       animation: pageLoad 0.5s ease-out;
@@ -156,6 +156,15 @@
       text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
 
+    h3 {
+      color: #ffffff;
+      font-size: 1.3em;
+      margin: 25px 0 15px;
+      font-weight: 500;
+      font-family: 'Georgia', serif;
+      letter-spacing: 0.5px;
+    }
+
     /* ===== LISTAS ===== */
     ul {
       list-style: none;
@@ -173,6 +182,9 @@
       box-shadow: 0 3px 10px rgba(0,0,0,0.2);
       font-size: 1.05em;
       line-height: 1.7;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
     }
 
     li:hover {
@@ -180,6 +192,34 @@
       transform: translateX(8px);
       border-left-color: #3182ce;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* ===== ÁREA DE IMAGEN ===== */
+    .image-placeholder {
+      min-width: 80px;
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(145deg, #4a5568, #2d3748);
+      border: 2px dashed #cbd5e0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #a0aec0;
+      font-size: 12px;
+      text-align: center;
+      font-style: italic;
+      transition: all 0.3s ease;
+    }
+
+    .image-placeholder:hover {
+      background: linear-gradient(145deg, #718096, #4a5568);
+      border-color: #e2e8f0;
+    }
+
+    .content-text {
+      flex: 1;
     }
 
     /* ===== PÁRRAFOS ===== */
@@ -205,6 +245,18 @@
       font-size: 1.05em;
     }
 
+    /* ===== ENLACES ===== */
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
+
     /* ===== ANIMACIONES ===== */
     .fade-in {
       animation: fadeIn 0.5s ease-out;
@@ -225,6 +277,7 @@
     @media (max-width: 768px) {
       body {
         padding: 10px;
+        max-width: 100%;
       }
       
       header {
@@ -246,6 +299,17 @@
         display: block;
         width: fit-content;
       }
+
+      li {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-placeholder {
+        width: 60px;
+        height: 60px;
+        align-self: center;
+      }
     }
 
     @media (max-width: 480px) {
@@ -259,6 +323,11 @@
       
       li {
         padding: 15px;
+      }
+
+      .image-placeholder {
+        width: 50px;
+        height: 50px;
       }
     }
 
@@ -279,10 +348,28 @@
         box-shadow: none;
         border: 1px solid #ddd;
         break-inside: avoid;
+        background: white;
+        color: black;
       }
       
       section:hover {
         transform: none;
+      }
+
+      h2, h3 {
+        color: black;
+      }
+
+      li {
+        background: white;
+        color: black;
+        border-left-color: #333;
+      }
+
+      .image-placeholder {
+        border-color: #333;
+        background: white;
+        color: #666;
       }
     }
 
@@ -350,62 +437,213 @@
       </svg>
     </div>
     <h1>Joseantonio Caleb Gonzales Chumbe</h1>
-    <p id="cv-title-es">Currículum Vitae</p>
-    <p id="cv-title-en" style="display:none;">Curriculum Vitae</p>
+    <p id="cv-title-es">Currículum Vitae Profesional</p>
+    <p id="cv-title-en" style="display:none;">Professional Curriculum Vitae</p>
   </header>
 
   <button id="btn-lang">English</button>
 
   <!-- Perfil -->
-  <section id="perfil-es">
-    <h2>Perfil Profesional</h2>
-    <p>Ingeniero de sistemas con 5 años de experiencia en ciberseguridad.</p>
+  <section id="perfil-es" class="fade-in">
+    <h2>🔹 Perfil Profesional</h2>
+    <p>Soy estudiante de Ingeniería de Sistemas e Informática con una formación complementaria en inglés (TOEFL aprobado), electrónica, robótica y herramientas digitales como Excel avanzado. Me defino por mi responsabilidad, liderazgo y comunicación efectiva, habilidades que he puesto en práctica como intérprete voluntario en campañas médicas internacionales. Actualmente me encuentro explorando áreas como la ciberseguridad y el desarrollo de soluciones tecnológicas, con el objetivo de contribuir a proyectos con impacto real.</p>
   </section>
-  <section id="perfil-en" style="display:none;">
-    <h2>Professional Profile</h2>
-    <p>Systems engineer with 5 years of experience in cybersecurity.</p>
-  </section>
-
-  <!-- Experiencia -->
-  <section id="experiencia-es">
-    <h2>Experiencia Laboral</h2>
-    <ul>
-      <li>Analista de Seguridad en XYZ Corp (2021 - Presente) — Análisis y mitigación de riesgos.</li>
-      <li>Especialista en Soporte TI en ABC Ltd (2018 - 2021) — Gestión de redes y soporte.</li>
-    </ul>
-  </section>
-  <section id="experiencia-en" style="display:none;">
-    <h2>Work Experience</h2>
-    <ul>
-      <li>Security Analyst at XYZ Corp (2021 - Present) — Risk analysis and mitigation.</li>
-      <li>IT Support Specialist at ABC Ltd (2018 - 2021) — Network management and user support.</li>
-    </ul>
+  <section id="perfil-en" style="display:none;" class="fade-in">
+    <h2>🔹 Professional Profile</h2>
+    <p>I am a Systems and Computer Engineering student with complementary training in English (TOEFL approved), electronics, robotics, and digital tools like advanced Excel. I am defined by my responsibility, leadership, and effective communication skills, which I have put into practice as a volunteer interpreter in international medical campaigns. Currently, I am exploring areas such as cybersecurity and the development of technological solutions, with the goal of contributing to projects with real impact.</p>
   </section>
 
-  <!-- Educación -->
-  <section id="educacion-es">
-    <h2>Formación Académica</h2>
+  <!-- Formación Académica -->
+  <section id="formacion-es" class="fade-in">
+    <h2>🔹 Formación Académica y Certificaciones</h2>
+    
+    <h3>🎓 Académica:</h3>
     <ul>
-      <li>Ingeniería de Sistemas, Universidad Nacional, 2018</li>
+      <li>
+        <div class="image-placeholder">Imagen UTP</div>
+        <div class="content-text">
+          <strong>2025 – en curso</strong><br>
+          Ingeniería de Sistemas e Informática<br>
+          <em>UTP – Universidad Tecnológica del Perú</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">Imagen IE</div>
+        <div class="content-text">
+          <strong>2020–2024</strong><br>
+          Secundaria completa<br>
+          <em>IE Cristiano Pionero</em>
+        </div>
+      </li>
+    </ul>
+
+    <h3>🛠 Técnicas y Tecnológicas:</h3>
+    <ul>
+      <li>
+        <div class="image-placeholder">Imagen CCL</div>
+        <div class="content-text">
+          <strong>2025</strong><br>
+          Excel Integral (Básico, Intermedio y Avanzado)<br>
+          <em>CCL – Cámara de Comercio</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">Imagen GAMOR</div>
+        <div class="content-text">
+          <strong>2024</strong><br>
+          Curso Taller de Electrónica<br>
+          <em>GAMOR</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">Imagen SENATI</div>
+        <div class="content-text">
+          <strong>2017</strong><br>
+          Curso Taller de Robótica con LEGO<br>
+          <em>SENATI</em>
+        </div>
+      </li>
+    </ul>
+
+    <h3>🌐 Idiomas y Voluntariado Internacional:</h3>
+    <ul>
+      <li>
+        <div class="image-placeholder">Imagen ICPNA</div>
+        <div class="content-text">
+          <strong>2023–2025</strong><br>
+          Inglés Nivel Avanzado en Curso<br>
+          <em>ICPNA</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">Imagen TOEFL</div>
+        <div class="content-text">
+          <strong>Marzo 2025</strong><br>
+          TOEFL Aprobado – Nivel Intermedio<br>
+          <em>ICPNA</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">Imagen MMO</div>
+        <div class="content-text">
+          <strong>Junio 2024</strong><br>
+          English Interpreter<br>
+          <em>Medical Missions Outreach</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">Imagen MMO</div>
+        <div class="content-text">
+          <strong>Abril 2025</strong><br>
+          English Interpreter<br>
+          <em>Medical Missions Outreach</em>
+        </div>
+      </li>
     </ul>
   </section>
-  <section id="educacion-en" style="display:none;">
-    <h2>Education</h2>
+
+  <section id="formacion-en" style="display:none;" class="fade-in">
+    <h2>🔹 Academic Background and Certifications</h2>
+    
+    <h3>🎓 Academic:</h3>
     <ul>
-      <li>Systems Engineering, National University, 2018</li>
+      <li>
+        <div class="image-placeholder">UTP Image</div>
+        <div class="content-text">
+          <strong>2025 – ongoing</strong><br>
+          Systems and Computer Engineering<br>
+          <em>UTP – Universidad Tecnológica del Perú</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">IE Image</div>
+        <div class="content-text">
+          <strong>2020–2024</strong><br>
+          Complete High School<br>
+          <em>IE Cristiano Pionero</em>
+        </div>
+      </li>
+    </ul>
+
+    <h3>🛠 Technical and Technological:</h3>
+    <ul>
+      <li>
+        <div class="image-placeholder">CCL Image</div>
+        <div class="content-text">
+          <strong>2025</strong><br>
+          Comprehensive Excel (Basic, Intermediate and Advanced)<br>
+          <em>CCL – Chamber of Commerce</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">GAMOR Image</div>
+        <div class="content-text">
+          <strong>2024</strong><br>
+          Electronics Workshop Course<br>
+          <em>GAMOR</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">SENATI Image</div>
+        <div class="content-text">
+          <strong>2017</strong><br>
+          LEGO Robotics Workshop Course<br>
+          <em>SENATI</em>
+        </div>
+      </li>
+    </ul>
+
+    <h3>🌐 Languages and International Volunteering:</h3>
+    <ul>
+      <li>
+        <div class="image-placeholder">ICPNA Image</div>
+        <div class="content-text">
+          <strong>2023–2025</strong><br>
+          Advanced English Level in Progress<br>
+          <em>ICPNA</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">TOEFL Image</div>
+        <div class="content-text">
+          <strong>March 2025</strong><br>
+          TOEFL Approved – Intermediate Level<br>
+          <em>ICPNA</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">MMO Image</div>
+        <div class="content-text">
+          <strong>June 2024</strong><br>
+          English Interpreter<br>
+          <em>Medical Missions Outreach</em>
+        </div>
+      </li>
+      <li>
+        <div class="image-placeholder">MMO Image</div>
+        <div class="content-text">
+          <strong>April 2025</strong><br>
+          English Interpreter<br>
+          <em>Medical Missions Outreach</em>
+        </div>
+      </li>
     </ul>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto-es">
-    <h2>Contacto</h2>
-    <p>Correo: tu.email@ejemplo.com</p>
-    <p>Teléfono: +51 9xxxxxxx</p>
+  <section id="contacto-es" class="fade-in">
+    <h2>🔹 Contacto Profesional</h2>
+    <p>📞 <strong>Teléfono:</strong> +51 988 641 369</p>
+    <p>📧 <strong>Correo electrónico:</strong> jc.gonzales2007@hotmail.com</p>
+    <p>🌍 <strong>Idiomas:</strong> Español (nativo), Inglés (avanzado)</p>
+    <p>🔗 <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/joseantonio-gonzales" target="_blank">linkedin.com/in/joseantonio-gonzales</a></p>
   </section>
-  <section id="contacto-en" style="display:none;">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>Phone: +51 9xxxxxxx</p>
+  <section id="contacto-en" style="display:none;" class="fade-in">
+    <h2>🔹 Professional Contact</h2>
+    <p>📞 <strong>Phone:</strong> +51 988 641 369</p>
+    <p>📧 <strong>Email:</strong> jc.gonzales2007@hotmail.com</p>
+    <p>🌍 <strong>Languages:</strong> Spanish (native), English (advanced)</p>
+    <p>🔗 <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/joseantonio-gonzales" target="_blank">linkedin.com/in/joseantonio-gonzales</a></p>
   </section>
 
   <script>
@@ -415,20 +653,39 @@
 
       // Toggle display of Spanish sections
       document.getElementById('perfil-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('experiencia-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('educacion-es').style.display = isSpanish ? 'none' : 'block';
+      document.getElementById('formacion-es').style.display = isSpanish ? 'none' : 'block';
       document.getElementById('contacto-es').style.display = isSpanish ? 'none' : 'block';
       document.getElementById('cv-title-es').style.display = isSpanish ? 'none' : 'block';
 
       // Toggle display of English sections
       document.getElementById('perfil-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('experiencia-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('educacion-en').style.display = isSpanish ? 'block' : 'none';
+      document.getElementById('formacion-en').style.display = isSpanish ? 'block' : 'none';
       document.getElementById('contacto-en').style.display = isSpanish ? 'block' : 'none';
       document.getElementById('cv-title-en').style.display = isSpanish ? 'block' : 'none';
 
       // Change button text
       btnLang.textContent = isSpanish ? 'Español' : 'English';
+
+      // Add fade-in animation to newly shown sections
+      const sections = isSpanish ? 
+        ['perfil-en', 'formacion-en', 'contacto-en'] : 
+        ['perfil-es', 'formacion-es', 'contacto-es'];
+      
+      sections.forEach(id => {
+        const element = document.getElementById(id);
+        element.classList.remove('fade-in');
+        setTimeout(() => element.classList.add('fade-in'), 10);
+      });
+    });
+
+    // Add smooth scroll behavior and initial animations
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      sections.forEach((section, index) => {
+        setTimeout(() => {
+          section.classList.add('fade-in');
+        }, index * 100);
+      });
     });
   </script>
 </body>
