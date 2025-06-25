@@ -182,9 +182,6 @@
       box-shadow: 0 3px 10px rgba(0,0,0,0.2);
       font-size: 1.05em;
       line-height: 1.7;
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
     }
 
     li:hover {
@@ -192,34 +189,6 @@
       transform: translateX(8px);
       border-left-color: #3182ce;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
-    /* ===== ÁREA DE IMAGEN ===== */
-    .image-placeholder {
-      min-width: 80px;
-      width: 80px;
-      height: 80px;
-      background: linear-gradient(145deg, #4a5568, #2d3748);
-      border: 2px dashed #cbd5e0;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: #a0aec0;
-      font-size: 12px;
-      text-align: center;
-      font-style: italic;
-      transition: all 0.3s ease;
-    }
-
-    .image-placeholder:hover {
-      background: linear-gradient(145deg, #718096, #4a5568);
-      border-color: #e2e8f0;
-    }
-
-    .content-text {
-      flex: 1;
     }
 
     /* ===== PÁRRAFOS ===== */
@@ -301,14 +270,7 @@
       }
 
       li {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .image-placeholder {
-        width: 60px;
-        height: 60px;
-        align-self: center;
+        padding: 15px;
       }
     }
 
@@ -323,11 +285,6 @@
       
       li {
         padding: 15px;
-      }
-
-      .image-placeholder {
-        width: 50px;
-        height: 50px;
       }
     }
 
@@ -364,12 +321,6 @@
         background: white;
         color: black;
         border-left-color: #333;
-      }
-
-      .image-placeholder {
-        border-color: #333;
-        background: white;
-        color: #666;
       }
     }
 
@@ -453,183 +404,6 @@
     <p>I am a Systems and Computer Engineering student with complementary training in English (TOEFL approved), electronics, robotics, and digital tools like advanced Excel. I am defined by my responsibility, leadership, and effective communication skills, which I have put into practice as a volunteer interpreter in international medical campaigns. Currently, I am exploring areas such as cybersecurity and the development of technological solutions, with the goal of contributing to projects with real impact.</p>
   </section>
 
-  <!-- Formación Académica -->
-  <section id="formacion-es" class="fade-in">
-    <h2>🔹 Formación Académica y Certificaciones</h2>
-    
-    <h3>🎓 Académica:</h3>
-    <ul>
-      <li>
-        <div class="image-placeholder">Imagen UTP</div>
-        <div class="content-text">
-          <strong>2025 – en curso</strong><br>
-          Ingeniería de Sistemas e Informática<br>
-          <em>UTP – Universidad Tecnológica del Perú</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">Imagen IE</div>
-        <div class="content-text">
-          <strong>2020–2024</strong><br>
-          Secundaria completa<br>
-          <em>IE Cristiano Pionero</em>
-        </div>
-      </li>
-    </ul>
-
-    <h3>🛠 Técnicas y Tecnológicas:</h3>
-    <ul>
-      <li>
-        <div class="image-placeholder">Imagen CCL</div>
-        <div class="content-text">
-          <strong>2025</strong><br>
-          Excel Integral (Básico, Intermedio y Avanzado)<br>
-          <em>CCL – Cámara de Comercio</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">Imagen GAMOR</div>
-        <div class="content-text">
-          <strong>2024</strong><br>
-          Curso Taller de Electrónica<br>
-          <em>GAMOR</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">Imagen SENATI</div>
-        <div class="content-text">
-          <strong>2017</strong><br>
-          Curso Taller de Robótica con LEGO<br>
-          <em>SENATI</em>
-        </div>
-      </li>
-    </ul>
-
-    <h3>🌐 Idiomas y Voluntariado Internacional:</h3>
-    <ul>
-      <li>
-        <div class="image-placeholder">Imagen ICPNA</div>
-        <div class="content-text">
-          <strong>2023–2025</strong><br>
-          Inglés Nivel Avanzado en Curso<br>
-          <em>ICPNA</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">Imagen TOEFL</div>
-        <div class="content-text">
-          <strong>Marzo 2025</strong><br>
-          TOEFL Aprobado – Nivel Intermedio<br>
-          <em>ICPNA</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">Imagen MMO</div>
-        <div class="content-text">
-          <strong>Junio 2024</strong><br>
-          English Interpreter<br>
-          <em>Medical Missions Outreach</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">Imagen MMO</div>
-        <div class="content-text">
-          <strong>Abril 2025</strong><br>
-          English Interpreter<br>
-          <em>Medical Missions Outreach</em>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section id="formacion-en" style="display:none;" class="fade-in">
-    <h2>🔹 Academic Background and Certifications</h2>
-    
-    <h3>🎓 Academic:</h3>
-    <ul>
-      <li>
-        <div class="image-placeholder">UTP Image</div>
-        <div class="content-text">
-          <strong>2025 – ongoing</strong><br>
-          Systems and Computer Engineering<br>
-          <em>UTP – Universidad Tecnológica del Perú</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">IE Image</div>
-        <div class="content-text">
-          <strong>2020–2024</strong><br>
-          Complete High School<br>
-          <em>IE Cristiano Pionero</em>
-        </div>
-      </li>
-    </ul>
-
-    <h3>🛠 Technical and Technological:</h3>
-    <ul>
-      <li>
-        <div class="image-placeholder">CCL Image</div>
-        <div class="content-text">
-          <strong>2025</strong><br>
-          Comprehensive Excel (Basic, Intermediate and Advanced)<br>
-          <em>CCL – Chamber of Commerce</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">GAMOR Image</div>
-        <div class="content-text">
-          <strong>2024</strong><br>
-          Electronics Workshop Course<br>
-          <em>GAMOR</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">SENATI Image</div>
-        <div class="content-text">
-          <strong>2017</strong><br>
-          LEGO Robotics Workshop Course<br>
-          <em>SENATI</em>
-        </div>
-      </li>
-    </ul>
-
-    <h3>🌐 Languages and International Volunteering:</h3>
-    <ul>
-      <li>
-        <div class="image-placeholder">ICPNA Image</div>
-        <div class="content-text">
-          <strong>2023–2025</strong><br>
-          Advanced English Level in Progress<br>
-          <em>ICPNA</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">TOEFL Image</div>
-        <div class="content-text">
-          <strong>March 2025</strong><br>
-          TOEFL Approved – Intermediate Level<br>
-          <em>ICPNA</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">MMO Image</div>
-        <div class="content-text">
-          <strong>June 2024</strong><br>
-          English Interpreter<br>
-          <em>Medical Missions Outreach</em>
-        </div>
-      </li>
-      <li>
-        <div class="image-placeholder">MMO Image</div>
-        <div class="content-text">
-          <strong>April 2025</strong><br>
-          English Interpreter<br>
-          <em>Medical Missions Outreach</em>
-        </div>
-      </li>
-    </ul>
-  </section>
-
   <!-- Contacto -->
   <section id="contacto-es" class="fade-in">
     <h2>🔹 Contacto Profesional</h2>
@@ -646,6 +420,162 @@
     <p>🔗 <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/joseantonio-gonzales" target="_blank">linkedin.com/in/joseantonio-gonzales</a></p>
   </section>
 
+  <!-- Formación Académica -->
+  <section id="formacion-es" class="fade-in">
+    <h2>🔹 Formación Académica y Certificaciones</h2>
+    
+    <h3>🎓 Académica:</h3>
+    <ul>
+      <li>
+        <strong>2025 – en curso</strong><br>
+        Ingeniería de Sistemas e Informática<br>
+        <em>UTP – Universidad Tecnológica del Perú</em>
+      </li>
+      <li>
+        <strong>2020–2024</strong><br>
+        Secundaria completa<br>
+        <em>IE Cristiano Pionero</em>
+      </li>
+    </ul>
+
+    <h3>🛠 Técnicas y Tecnológicas:</h3>
+    <ul>
+      <li>
+        <strong>2025</strong><br>
+        Excel Integral (Básico, Intermedio y Avanzado)<br>
+        <em>CCL – Cámara de Comercio</em>
+      </li>
+      <li>
+        <strong>2024</strong><br>
+        Curso Taller de Electrónica<br>
+        <em>GAMOR</em>
+      </li>
+      <li>
+        <strong>2017</strong><br>
+        Curso Taller de Robótica con LEGO<br>
+        <em>SENATI</em>
+      </li>
+    </ul>
+
+    <h3>🌐 Idiomas:</h3>
+    <ul>
+      <li>
+        <strong>2023–2025</strong><br>
+        Inglés Nivel Avanzado en Curso<br>
+        <em>ICPNA</em>
+      </li>
+      <li>
+        <strong>Marzo 2025</strong><br>
+        TOEFL Aprobado – Nivel Intermedio<br>
+        <em>ICPNA</em>
+      </li>
+    </ul>
+  </section>
+
+  <section id="formacion-en" style="display:none;" class="fade-in">
+    <h2>🔹 Academic Background and Certifications</h2>
+    
+    <h3>🎓 Academic:</h3>
+    <ul>
+      <li>
+        <strong>2025 – ongoing</strong><br>
+        Systems and Computer Engineering<br>
+        <em>UTP – Universidad Tecnológica del Perú</em>
+      </li>
+      <li>
+        <strong>2020–2024</strong><br>
+        Complete High School<br>
+        <em>IE Cristiano Pionero</em>
+      </li>
+    </ul>
+
+    <h3>🛠 Technical and Technological:</h3>
+    <ul>
+      <li>
+        <strong>2025</strong><br>
+        Comprehensive Excel (Basic, Intermediate and Advanced)<br>
+        <em>CCL – Chamber of Commerce</em>
+      </li>
+      <li>
+        <strong>2024</strong><br>
+        Electronics Workshop Course<br>
+        <em>GAMOR</em>
+      </li>
+      <li>
+        <strong>2017</strong><br>
+        LEGO Robotics Workshop Course<br>
+        <em>SENATI</em>
+      </li>
+    </ul>
+
+    <h3>🌐 Languages:</h3>
+    <ul>
+      <li>
+        <strong>2023–2025</strong><br>
+        Advanced English Level in Progress<br>
+        <em>ICPNA</em>
+      </li>
+      <li>
+        <strong>March 2025</strong><br>
+        TOEFL Approved – Intermediate Level<br>
+        <em>ICPNA</em>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Otros (ahora después de Formación) -->
+  <section id="otros-es" class="fade-in">
+    <h2>⭐ Otros</h2>
+    
+    <h3>🌐 Experiencias de Traducción:</h3>
+    <ul>
+      <li>
+        <strong>Junio 2024</strong><br>
+        English Interpreter<br>
+        <em>Medical Missions Outreach</em>
+      </li>
+      <li>
+        <strong>Abril 2025</strong><br>
+        English Interpreter<br>
+        <em>Medical Missions Outreach</em>
+      </li>
+    </ul>
+
+    <h3>✍️ Autor y Escritor:</h3>
+    <ul>
+      <li>
+        <strong>Obra:</strong> Sentimientos Encontrados<br>
+        <a href="https://www.webnovel.com/book/el-valor-de-la-vida_32418336908687505" target="_blank">Ver obra completa</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="otros-en" style="display:none;" class="fade-in">
+    <h2>⭐ Others</h2>
+    
+    <h3>🌐 Translation Experiences:</h3>
+    <ul>
+      <li>
+        <strong>June 2024</strong><br>
+        English Interpreter<br>
+        <em>Medical Missions Outreach</em>
+      </li>
+      <li>
+        <strong>April 2025</strong><br>
+        English Interpreter<br>
+        <em>Medical Missions Outreach</em>
+      </li>
+    </ul>
+
+    <h3>✍️ Author and Writer:</h3>
+    <ul>
+      <li>
+        <strong>Work:</strong> Feelings Found<br>
+        <a href="https://www.webnovel.com/book/feelings-found_32993891508542905" target="_blank">View complete work</a>
+      </li>
+    </ul>
+  </section>
+
   <script>
     const btnLang = document.getElementById('btn-lang');
     btnLang.addEventListener('click', () => {
@@ -653,14 +583,16 @@
 
       // Toggle display of Spanish sections
       document.getElementById('perfil-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('formacion-es').style.display = isSpanish ? 'none' : 'block';
       document.getElementById('contacto-es').style.display = isSpanish ? 'none' : 'block';
+      document.getElementById('formacion-es').style.display = isSpanish ? 'none' : 'block';
+      document.getElementById('otros-es').style.display = isSpanish ? 'none' : 'block';
       document.getElementById('cv-title-es').style.display = isSpanish ? 'none' : 'block';
 
       // Toggle display of English sections
       document.getElementById('perfil-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('formacion-en').style.display = isSpanish ? 'block' : 'none';
       document.getElementById('contacto-en').style.display = isSpanish ? 'block' : 'none';
+      document.getElementById('formacion-en').style.display = isSpanish ? 'block' : 'none';
+      document.getElementById('otros-en').style.display = isSpanish ? 'block' : 'none';
       document.getElementById('cv-title-en').style.display = isSpanish ? 'block' : 'none';
 
       // Change button text
@@ -668,8 +600,8 @@
 
       // Add fade-in animation to newly shown sections
       const sections = isSpanish ? 
-        ['perfil-en', 'formacion-en', 'contacto-en'] : 
-        ['perfil-es', 'formacion-es', 'contacto-es'];
+        ['perfil-en', 'contacto-en', 'formacion-en', 'otros-en'] : 
+        ['perfil-es', 'contacto-es', 'formacion-es', 'otros-es'];
       
       sections.forEach(id => {
         const element = document.getElementById(id);
