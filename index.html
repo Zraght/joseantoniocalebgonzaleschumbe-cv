@@ -54,15 +54,15 @@
     }
 
     .page-title a {
-      color: #ffffff;
+      color: #60a5fa;
       text-decoration: none;
       transition: all 0.3s ease;
       display: inline-block;
     }
 
     .page-title a:hover {
-      color: #60a5fa;
-      text-shadow: 2px 2px 8px rgba(96, 165, 250, 0.3);
+      color: #93c5fd;
+      text-decoration: underline;
       transform: translateY(-2px);
     }
 
@@ -386,8 +386,9 @@
 
       .page-title h1,
       .page-title a {
-        color: black !important;
+        color: #60a5fa !important;
         text-shadow: none;
+        text-decoration: underline;
       }
 
       .page-subtitle {
@@ -483,7 +484,8 @@
 <body>
   <!-- Título de la página clickeable -->
   <div class="page-title">
-    <h1><a href="#" onclick="window.print(); return false;">Professional CV - Official Page</a></h1>
+    <h1><a href="#" onclick="window.print(); return false;">Professional CV - Joseantonio Caleb Gonzales Chumbe</a></h1>
+    <p class="page-subtitle">Systems and Computer Engineering Student</p>
   </div>
 
   <header>
@@ -630,7 +632,6 @@
     <h3>🛠 Técnicas y Tecnológicas:</h3>
     <ul>
       <li>
-<<<<<<< HEAD
         <strong>2025</strong><br>
         Excel Integral (Básico, Intermedio y Avanzado)<br>
         <em>CCL – Cámara de Comercio</em>
@@ -658,11 +659,6 @@
         <strong>Marzo 2025</strong><br>
         TOEFL Aprobado – Nivel Intermedio<br>
         <em>ICPNA</em>
-=======
-        <strong>Febrero 2025</strong><br>
-        <strong>Obra:</strong> El Valor de la Vida<br>
-        <a href="https://www.webnovel.com/book/el-valor-de-la-vida_32418336908687505" target="_blank">Ver obra completa</a>
->>>>>>> 96efa694c8252db4ce6bdc0f0bebae8df0a4e611
       </li>
     </ul>
   </section>
@@ -693,7 +689,7 @@
     <ul>
       <li>
         <strong>February 2025</strong><br>
-        <strong>Work:</strong> The Value of Life<br>
+        <strong>Work:</strong> Feelings Found<br>
         <a href="https://www.webnovel.com/book/feelings-found_32993891508542905" target="_blank">View complete work</a>
       </li>
     </ul>
@@ -758,7 +754,8 @@
 
         // Cambiar textos
         btnLang.textContent = 'English';
-        pageTitle.textContent = 'CV Profesional - Página Oficial';
+        pageTitle.textContent = 'CV Profesional - Joseantonio Caleb Gonzales Chumbe';
+        pageSubtitle.textContent = 'Estudiante de Ingeniería de Sistemas e Informática';
         
         // Cambiar idioma del documento
         document.documentElement.lang = 'es';
@@ -782,8 +779,8 @@
 
         // Cambiar textos
         btnLang.textContent = 'Español';
-        pageTitle.textContent = 'Professional CV - Joseantonio Caleb Gonzales Chumbe';
-        pageSubtitle.textContent = 'Systems and Computer Engineering Student';
+        pageTitle.textContent = 'Professional CV - Official Page';
+        pageTitle.href = 'https://zraght.github.io/joseantoniocalebgonzaleschumbe-cv/';
         
         // Cambiar idioma del documento
         document.documentElement.lang = 'en';
