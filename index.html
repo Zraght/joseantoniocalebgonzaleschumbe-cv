@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,6 +36,44 @@
       to { opacity: 1; }
     }
 
+    /* ===== TÍTULO DE LA PÁGINA (NUEVO) ===== */
+    .page-title {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px 0;
+    }
+
+    .page-title h1 {
+      color: #ffffff;
+      font-size: 2.2em;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      font-family: 'Georgia', serif;
+      margin-bottom: 10px;
+    }
+
+    .page-title a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .page-title a:hover {
+      color: #60a5fa;
+      text-shadow: 2px 2px 8px rgba(96, 165, 250, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .page-subtitle {
+      color: #cbd5e0;
+      font-size: 1.1em;
+      font-style: italic;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+
     /* ===== HEADER ===== */
     header {
       text-align: center;
@@ -68,7 +105,7 @@
       margin-bottom: 20px;
     }
 
-    h1 {
+    header h1 {
       color: #ffffff;
       font-size: 2.4em;
       margin-bottom: 15px;
@@ -277,12 +314,16 @@
         padding: 10px;
         max-width: 100%;
       }
+
+      .page-title h1 {
+        font-size: 1.8em;
+      }
       
       header {
         padding: 25px 15px;
       }
       
-      h1 {
+      header h1 {
         font-size: 1.8em;
       }
       
@@ -309,7 +350,11 @@
     }
 
     @media (max-width: 480px) {
-      h1 {
+      .page-title h1 {
+        font-size: 1.6em;
+      }
+
+      header h1 {
         font-size: 1.6em;
       }
       
@@ -329,6 +374,24 @@
         color: black;
         max-width: none;
         padding: 0;
+      }
+
+      .page-title {
+        background: white;
+        color: black;
+        border-bottom: 2px solid #333;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+
+      .page-title h1,
+      .page-title a {
+        color: black !important;
+        text-shadow: none;
+      }
+
+      .page-subtitle {
+        color: #666;
       }
       
       #btn-lang {
@@ -356,6 +419,17 @@
         color: black;
         border-left-color: #333;
       }
+
+      header {
+        background: white;
+        color: black;
+        border: 1px solid #ddd;
+      }
+
+      header h1 {
+        color: black;
+        text-shadow: none;
+      }
     }
 
     /* ===== UTILIDADES ===== */
@@ -382,8 +456,9 @@
 
     /* Focus states para accesibilidad */
     #btn-lang:focus,
-    section:focus-within {
-      outline: 2px solid #333;
+    section:focus-within,
+    .page-title a:focus {
+      outline: 2px solid #60a5fa;
       outline-offset: 2px;
     }
 
@@ -406,6 +481,11 @@
   </style>
 </head>
 <body>
+  <!-- Título de la página clickeable -->
+  <div class="page-title">
+    <h1><a href="#" onclick="window.print(); return false;">Professional CV - Official Page</a></h1>
+  </div>
+
   <header>
     <div class="logo">
       <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
@@ -422,51 +502,40 @@
       </svg>
     </div>
     <h1>Joseantonio Caleb Gonzales Chumbe</h1>
-    <p id="cv-title-es">Currículum Vitae Profesional</p>
-    <p id="cv-title-en" style="display:none;">Professional Curriculum Vitae</p>
+    <p id="cv-title-en">Professional Curriculum Vitae</p>
+    <p id="cv-title-es" style="display:none;">Currículum Vitae Profesional</p>
   </header>
 
-  <button id="btn-lang">English</button>
+  <button id="btn-lang">Español</button>
 
   <!-- Contacto -->
-  <section id="contacto-es" class="fade-in">
-    <h2>🔹 Contacto Profesional</h2>
-    <p>📞 <strong>Teléfono:</strong> +51 988 641 369</p>
-    <p>📧 <strong>Correo electrónico:</strong> jc.gonzales2007@hotmail.com</p>
-    <p>🌍 <strong>Idiomas:</strong> Español (nativo), Inglés (avanzado)</p>
-    <p>🔗 <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/joseantonio-gonzales" target="_blank">linkedin.com/in/joseantonio-gonzales</a></p>
-  </section>
-  <section id="contacto-en" style="display:none;" class="fade-in">
+  <section id="contacto-en" class="fade-in">
     <h2>🔹 Professional Contact</h2>
     <p>📞 <strong>Phone:</strong> +51 988 641 369</p>
     <p>📧 <strong>Email:</strong> jc.gonzales2007@hotmail.com</p>
     <p>🌍 <strong>Languages:</strong> Spanish (native), English (advanced)</p>
     <p>🔗 <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/joseantonio-gonzales" target="_blank">linkedin.com/in/joseantonio-gonzales</a></p>
   </section>
+  <section id="contacto-es" style="display:none;" class="fade-in">
+    <h2>🔹 Contacto Profesional</h2>
+    <p>📞 <strong>Teléfono:</strong> +51 988 641 369</p>
+    <p>📧 <strong>Correo electrónico:</strong> jc.gonzales2007@hotmail.com</p>
+    <p>🌍 <strong>Idiomas:</strong> Español (nativo), Inglés (avanzado)</p>
+    <p>🔗 <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/joseantonio-gonzales" target="_blank">linkedin.com/in/joseantonio-gonzales</a></p>
+  </section>
 
   <!-- Perfil -->
-  <section id="perfil-es" class="fade-in">
-    <h2>🔹 Perfil Profesional</h2>
-    <p>Soy estudiante de Ingeniería de Sistemas e Informática con formación complementaria en inglés (TOEFL aprobado), electrónica, robótica y herramientas digitales como Excel avanzado. He participado como intérprete voluntario en campañas médicas internacionales, experiencia que fortaleció mi capacidad para trabajar en equipo en entornos exigentes y multiculturales. Actualmente exploro áreas como la ciberseguridad y el desarrollo de soluciones tecnológicas, y estoy abierto a contribuir como traductor en contextos profesionales o participar creativamente como escritor. Mi propósito es generar un impacto real y positivo en cada proyecto en el que participe.</p>
-  </section>
-  <section id="perfil-en" style="display:none;" class="fade-in">
+  <section id="perfil-en" class="fade-in">
     <h2>🔹 Professional Profile</h2>
     <p>I am a Systems and Computer Engineering student with complementary training in English (TOEFL approved), electronics, robotics, and digital tools like advanced Excel. I have participated as a volunteer interpreter in international medical campaigns, an experience that strengthened my ability to work in teams in demanding and multicultural environments. Currently, I am exploring areas such as cybersecurity and the development of technological solutions, and I am open to contributing as a translator in professional contexts or participating creatively as a writer. My purpose is to generate a real and positive impact in every project I participate in.</p>
   </section>
+  <section id="perfil-es" style="display:none;" class="fade-in">
+    <h2>🔹 Perfil Profesional</h2>
+    <p>Soy estudiante de Ingeniería de Sistemas e Informática con formación complementaria en inglés (TOEFL aprobado), electrónica, robótica y herramientas digitales como Excel avanzado. He participado como intérprete voluntario en campañas médicas internacionales, experiencia que fortaleció mi capacidad para trabajar en equipo en entornos exigentes y multiculturales. Actualmente exploro áreas como la ciberseguridad y el desarrollo de soluciones tecnológicas, y estoy abierto a contribuir como traductor en contextos profesionales o participar creativamente como escritor. Mi propósito es generar un impacto real y positivo en cada proyecto en el que participe.</p>
+  </section>
 
   <!-- Habilidades Blandas -->
-  <section id="habilidades-es" class="fade-in">
-    <h2>🔹 Habilidades Blandas</h2>
-    <div class="soft-skills-grid">
-      <div class="skill-item">🧠 <strong>Responsabilidad</strong></div>
-      <div class="skill-item">🗣️ <strong>Comunicación efectiva</strong></div>
-      <div class="skill-item">👥 <strong>Liderazgo</strong></div>
-      <div class="skill-item">🎯 <strong>Visión</strong></div>
-      <div class="skill-item">🔄 <strong>Adaptabilidad</strong></div>
-      <div class="skill-item">🚀 <strong>Iniciativa</strong></div>
-    </div>
-  </section>
-  <section id="habilidades-en" style="display:none;" class="fade-in">
+  <section id="habilidades-en" class="fade-in">
     <h2>🔹 Soft Skills</h2>
     <div class="soft-skills-grid">
       <div class="skill-item">🧠 <strong>Responsibility</strong></div>
@@ -477,60 +546,20 @@
       <div class="skill-item">🚀 <strong>Initiative</strong></div>
     </div>
   </section>
-
-  <!-- Formación Académica -->
-  <section id="formacion-es" class="fade-in">
-    <h2>🔹 Formación Académica y Certificaciones</h2>
-    
-    <h3>🎓 Académica:</h3>
-    <ul>
-      <li>
-        <strong>2025 – en curso</strong><br>
-        Ingeniería de Sistemas e Informática<br>
-        <em>UTP – Universidad Tecnológica del Perú</em>
-      </li>
-      <li>
-        <strong>2020–2024</strong><br>
-        Secundaria completa<br>
-        <em>IE Cristiano Pionero</em>
-      </li>
-    </ul>
-
-    <h3>🛠 Técnicas y Tecnológicas:</h3>
-    <ul>
-      <li>
-        <strong>2025</strong><br>
-        Excel Integral (Básico, Intermedio y Avanzado)<br>
-        <em>CCL – Cámara de Comercio</em>
-      </li>
-      <li>
-        <strong>2024</strong><br>
-        Curso Taller de Electrónica<br>
-        <em>GAMOR</em>
-      </li>
-      <li>
-        <strong>2017</strong><br>
-        Curso Taller de Robótica con LEGO<br>
-        <em>SENATI</em>
-      </li>
-    </ul>
-
-    <h3>🌐 Idiomas:</h3>
-    <ul>
-      <li>
-        <strong>2023–2025</strong><br>
-        Inglés Nivel Avanzado en Curso<br>
-        <em>ICPNA</em>
-      </li>
-      <li>
-        <strong>Marzo 2025</strong><br>
-        TOEFL Aprobado – Nivel Intermedio<br>
-        <em>ICPNA</em>
-      </li>
-    </ul>
+  <section id="habilidades-es" style="display:none;" class="fade-in">
+    <h2>🔹 Habilidades Blandas</h2>
+    <div class="soft-skills-grid">
+      <div class="skill-item">🧠 <strong>Responsabilidad</strong></div>
+      <div class="skill-item">🗣️ <strong>Comunicación efectiva</strong></div>
+      <div class="skill-item">👥 <strong>Liderazgo</strong></div>
+      <div class="skill-item">🎯 <strong>Visión</strong></div>
+      <div class="skill-item">🔄 <strong>Adaptabilidad</strong></div>
+      <div class="skill-item">🚀 <strong>Iniciativa</strong></div>
+    </div>
   </section>
 
-  <section id="formacion-en" style="display:none;" class="fade-in">
+  <!-- Formación Académica -->
+  <section id="formacion-en" class="fade-in">
     <h2>🔹 Academic Background and Certifications</h2>
     
     <h3>🎓 Academic:</h3>
@@ -581,39 +610,59 @@
     </ul>
   </section>
 
-  <!-- Otros -->
-  <section id="otros-es" class="fade-in">
-    <h2>⭐ Otros</h2>
+  <section id="formacion-es" style="display:none;" class="fade-in">
+    <h2>🔹 Formación Académica y Certificaciones</h2>
     
-    <h3>🌐 Experiencias de Traducción:</h3>
+    <h3>🎓 Académica:</h3>
     <ul>
       <li>
-        <strong>English Interpreter</strong><br>
-        <em>Medical Missions Outreach</em><br><br>
-        • Traducción simultánea entre pacientes hispanohablantes y personal médico estadounidense.<br>
-        • Coordinación con el equipo de atención para el flujo de pacientes.<br>
-        • Turnos intensivos de 8am a 5pm durante cinco días consecutivos.<br>
-        • Compensación simbólica por desempeño destacado.
+        <strong>2025 – en curso</strong><br>
+        Ingeniería de Sistemas e Informática<br>
+        <em>UTP – Universidad Tecnológica del Perú</em>
       </li>
       <li>
-        <strong>Junio 2024</strong>
-      </li>
-      <li>
-        <strong>Abril 2025</strong>
+        <strong>2020–2024</strong><br>
+        Secundaria completa<br>
+        <em>IE Cristiano Pionero</em>
       </li>
     </ul>
 
-    <h3>✍️ Autor y Escritor:</h3>
+    <h3>🛠 Técnicas y Tecnológicas:</h3>
     <ul>
       <li>
-        <strong>Febrero 2025</strong><br>
-        <strong>Obra:</strong> Sentimientos Encontrados<br>
-        <a href="https://www.webnovel.com/book/el-valor-de-la-vida_32418336908687505" target="_blank">Ver obra completa</a>
+        <strong>2025</strong><br>
+        Excel Integral (Básico, Intermedio y Avanzado)<br>
+        <em>CCL – Cámara de Comercio</em>
+      </li>
+      <li>
+        <strong>2024</strong><br>
+        Curso Taller de Electrónica<br>
+        <em>GAMOR</em>
+      </li>
+      <li>
+        <strong>2017</strong><br>
+        Curso Taller de Robótica con LEGO<br>
+        <em>SENATI</em>
+      </li>
+    </ul>
+
+    <h3>🌐 Idiomas:</h3>
+    <ul>
+      <li>
+        <strong>2023–2025</strong><br>
+        Inglés Nivel Avanzado en Curso<br>
+        <em>ICPNA</em>
+      </li>
+      <li>
+        <strong>Marzo 2025</strong><br>
+        TOEFL Aprobado – Nivel Intermedio<br>
+        <em>ICPNA</em>
       </li>
     </ul>
   </section>
 
-  <section id="otros-en" style="display:none;" class="fade-in">
+  <!-- Otros -->
+  <section id="otros-en" class="fade-in">
     <h2>⭐ Others</h2>
     
     <h3>🌐 Translation Experiences:</h3>
@@ -644,34 +693,100 @@
     </ul>
   </section>
 
+  <section id="otros-es" style="display:none;" class="fade-in">
+    <h2>⭐ Otros</h2>
+    
+    <h3>🌐 Experiencias de Traducción:</h3>
+    <ul>
+      <li>
+        <strong>English Interpreter</strong><br>
+        <em>Medical Missions Outreach</em><br><br>
+        • Traducción simultánea entre pacientes hispanohablantes y personal médico estadounidense.<br>
+        • Coordinación con el equipo de atención para el flujo de pacientes.<br>
+        • Turnos intensivos de 8am a 5pm durante cinco días consecutivos.<br>
+        • Compensación simbólica por desempeño destacado.
+      </li>
+      <li>
+        <strong>Junio 2024</strong>
+      </li>
+      <li>
+        <strong>Abril 2025</strong>
+      </li>
+    </ul>
+
+    <h3>✍️ Autor y Escritor:</h3>
+    <ul>
+      <li>
+        <strong>Febrero 2025</strong><br>
+        <strong>Obra:</strong> Sentimientos Encontrados<br>
+        <a href="https://www.webnovel.com/book/el-valor-de-la-vida_32418336908687505" target="_blank">Ver obra completa</a>
+      </li>
+    </ul>
+  </section>
+
   <script>
     const btnLang = document.getElementById('btn-lang');
+    const pageTitle = document.querySelector('.page-title h1 a');
+    const pageSubtitle = document.querySelector('.page-subtitle');
+    
     btnLang.addEventListener('click', () => {
-      const isSpanish = document.getElementById('perfil-es').style.display !== 'none';
+      const isEnglish = document.getElementById('perfil-en').style.display !== 'none';
 
-      // Toggle display of Spanish sections
-      document.getElementById('perfil-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('habilidades-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('contacto-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('formacion-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('otros-es').style.display = isSpanish ? 'none' : 'block';
-      document.getElementById('cv-title-es').style.display = isSpanish ? 'none' : 'block';
+      if (isEnglish) {
+        // Cambiar a español
+        // Ocultar secciones en inglés
+        document.getElementById('perfil-en').style.display = 'none';
+        document.getElementById('habilidades-en').style.display = 'none';
+        document.getElementById('contacto-en').style.display = 'none';
+        document.getElementById('formacion-en').style.display = 'none';
+        document.getElementById('otros-en').style.display = 'none';
+        document.getElementById('cv-title-en').style.display = 'none';
 
-      // Toggle display of English sections
-      document.getElementById('perfil-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('habilidades-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('contacto-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('formacion-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('otros-en').style.display = isSpanish ? 'block' : 'none';
-      document.getElementById('cv-title-en').style.display = isSpanish ? 'block' : 'none';
+        // Mostrar secciones en español
+        document.getElementById('perfil-es').style.display = 'block';
+        document.getElementById('habilidades-es').style.display = 'block';
+        document.getElementById('contacto-es').style.display = 'block';
+        document.getElementById('formacion-es').style.display = 'block';
+        document.getElementById('otros-es').style.display = 'block';
+        document.getElementById('cv-title-es').style.display = 'block';
 
-      // Change button text
-      btnLang.textContent = isSpanish ? 'Español' : 'English';
+        // Cambiar textos
+        btnLang.textContent = 'English';
+        pageTitle.textContent = 'CV Profesional - Página Oficial';
+        
+        // Cambiar idioma del documento
+        document.documentElement.lang = 'es';
+      } else {
+        // Cambiar a inglés
+        // Ocultar secciones en español
+        document.getElementById('perfil-es').style.display = 'none';
+        document.getElementById('habilidades-es').style.display = 'none';
+        document.getElementById('contacto-es').style.display = 'none';
+        document.getElementById('formacion-es').style.display = 'none';
+        document.getElementById('otros-es').style.display = 'none';
+        document.getElementById('cv-title-es').style.display = 'none';
+
+        // Mostrar secciones en inglés
+        document.getElementById('perfil-en').style.display = 'block';
+        document.getElementById('habilidades-en').style.display = 'block';
+        document.getElementById('contacto-en').style.display = 'block';
+        document.getElementById('formacion-en').style.display = 'block';
+        document.getElementById('otros-en').style.display = 'block';
+        document.getElementById('cv-title-en').style.display = 'block';
+
+        // Cambiar textos
+        btnLang.textContent = 'Español';
+        pageTitle.textContent = 'Professional CV - Joseantonio Caleb Gonzales Chumbe';
+        pageSubtitle.textContent = 'Systems and Computer Engineering Student';
+        
+        // Cambiar idioma del documento
+        document.documentElement.lang = 'en';
+      }
 
       // Add fade-in animation to newly shown sections
-      const sections = isSpanish ? 
-        ['perfil-en', 'contacto-en', 'formacion-en', 'otros-en'] : 
-        ['perfil-es', 'contacto-es', 'formacion-es', 'otros-es'];
+      const sections = isEnglish ? 
+        ['perfil-es', 'contacto-es', 'formacion-es', 'otros-es', 'habilidades-es'] : 
+        ['perfil-en', 'contacto-en', 'formacion-en', 'otros-en', 'habilidades-en'];
       
       sections.forEach(id => {
         const element = document.getElementById(id);
