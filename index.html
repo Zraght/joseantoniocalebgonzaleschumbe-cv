@@ -749,6 +749,7 @@
         document.getElementById('perfil-en').style.display = 'none';
         document.getElementById('habilidades-en').style.display = 'none';
         document.getElementById('contacto-en').style.display = 'none';
+        document.getElementById('experiencia-en').style.display = 'none';
         document.getElementById('formacion-en').style.display = 'none';
         document.getElementById('otros-en').style.display = 'none';
         document.getElementById('cv-title-en').style.display = 'none';
@@ -757,6 +758,7 @@
         document.getElementById('perfil-es').style.display = 'block';
         document.getElementById('habilidades-es').style.display = 'block';
         document.getElementById('contacto-es').style.display = 'block';
+        document.getElementById('experiencia-es').style.display = 'block';
         document.getElementById('formacion-es').style.display = 'block';
         document.getElementById('otros-es').style.display = 'block';
         document.getElementById('cv-title-es').style.display = 'block';
@@ -773,6 +775,7 @@
         document.getElementById('perfil-es').style.display = 'none';
         document.getElementById('habilidades-es').style.display = 'none';
         document.getElementById('contacto-es').style.display = 'none';
+        document.getElementById('experiencia-es').style.display = 'none';
         document.getElementById('formacion-es').style.display = 'none';
         document.getElementById('otros-es').style.display = 'none';
         document.getElementById('cv-title-es').style.display = 'none';
@@ -781,6 +784,7 @@
         document.getElementById('perfil-en').style.display = 'block';
         document.getElementById('habilidades-en').style.display = 'block';
         document.getElementById('contacto-en').style.display = 'block';
+        document.getElementById('experiencia-en').style.display = 'block';
         document.getElementById('formacion-en').style.display = 'block';
         document.getElementById('otros-en').style.display = 'block';
         document.getElementById('cv-title-en').style.display = 'block';
@@ -795,8 +799,8 @@
 
       // Add fade-in animation to newly shown sections
       const sections = isEnglish ? 
-        ['perfil-es', 'contacto-es', 'formacion-es', 'otros-es', 'habilidades-es'] : 
-        ['perfil-en', 'contacto-en', 'formacion-en', 'otros-en', 'habilidades-en'];
+        ['perfil-es', 'contacto-es', 'experiencia-es', 'formacion-es', 'otros-es', 'habilidades-es'] : 
+        ['perfil-en', 'contacto-en', 'experiencia-en', 'formacion-en', 'otros-en', 'habilidades-en'];
       
       sections.forEach(id => {
         const element = document.getElementById(id);
