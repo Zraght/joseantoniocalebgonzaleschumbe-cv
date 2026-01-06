@@ -1,0 +1,24 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definiciones -->
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  
+  <!-- Círculo exterior negro -->
+  <circle cx="60" cy="60" r="58" fill="#000000" filter="url(#shadow)"/>
+  
+  <!-- Círculo interior azul oscuro -->
+  <circle cx="60" cy="60" r="52" fill="#0b1f3a"/>
+  
+  <!-- Borde sutil -->
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Letra J - Estilo formal serif -->
+  <text x="44" y="75" font-family="Times New Roman, serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">J</text>
+  
+  <!-- Letra G - Estilo formal serif -->
+  <text x="76" y="75" font-family="Times New Roman, serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">G</text>
+
+</svg>
