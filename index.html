@@ -939,7 +939,12 @@
     
     // Load saved language preference or default to English
     function initializeLanguage() {
-      const savedLang = localStorage.getItem('cv-language') || 'es';
+      let savedLang = localStorage.getItem('cv-language');
+
+      if (!savedLang) {
+      savedLang = 'es';
+      localStorage.setItem('cv-language', 'es');
+      }
       
       if (savedLang === 'es') {
         toggleSections('es', 'en');
