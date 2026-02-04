@@ -988,9 +988,9 @@
       document.getElementById(`cv-title-${showLang}`).style.display = 'block';
     }
     
-    // Load saved language preference or default to Spanish
+    // Load saved language preference or default to English
     function initializeLanguage() {
-      const savedLang = localStorage.getItem('cv-language') || 'es';
+      const savedLang = localStorage.getItem('cv-language') || 'en';
       
       if (savedLang === 'es') {
         toggleSections('es', 'en');
