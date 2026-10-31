@@ -547,6 +547,8 @@
 
   <button id="btn-lang" aria-label="Change language / Cambiar idioma">Español</button>
 
+
+Main fragment · HTML
 <main>
     <!-- CONTACTO PROFESIONAL -->
     <section id="contacto-en" class="fade-in" role="region" aria-labelledby="contacto-en-title">
@@ -555,6 +557,7 @@
       <p>📧 <strong>Email:</strong> jc.gonzalesch.2007@gmail.com</p>
       <p>🌍 <strong>Languages:</strong> Spanish (native), English (advanced)</p>
       <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joseantonio-gonzales" target="_blank" rel="noopener noreferrer">linkedin.com/in/joseantonio-gonzales</a></p>
+      <p>💻 <strong>GitHub:</strong> <a href="https://github.com/Zraght" target="_blank" rel="noopener noreferrer">github.com/Zraght</a></p>
     </section>
     <section id="contacto-es" style="display:none;" class="fade-in" role="region" aria-labelledby="contacto-es-title">
       <h2 id="contacto-es-title">🔹 Contacto Profesional</h2>
@@ -562,49 +565,200 @@
       <p>📧 <strong>Email:</strong> jc.gonzalesch.2007@gmail.com</p>
       <p>🌍 <strong>Idiomas:</strong> Español (nativo), Inglés (avanzado)</p>
       <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joseantonio-gonzales" target="_blank" rel="noopener noreferrer">linkedin.com/in/joseantonio-gonzales</a></p>
+      <p>💻 <strong>GitHub:</strong> <a href="https://github.com/Zraght" target="_blank" rel="noopener noreferrer">github.com/Zraght</a></p>
     </section>
-
+ 
     <!-- PERFIL PROFESIONAL -->
     <section id="perfil-en" class="fade-in" role="region" aria-labelledby="perfil-en-title">
       <h2 id="perfil-en-title">🔹 Professional Profile</h2>
-      <p>I am a Systems Engineering student (UTP, High Potential Scholar 2026) and <strong>Conecta Impulso Ambassador (Intercorp)</strong>[cite: 1]. Technical background in backend development (Python), data pipelines (ETL), and automation[cite: 1]. Experienced in REST APIs consumption, relational database architecture, and data analysis, oriented toward building scalable tech solutions with business impact[cite: 1]. Additionally, I am a TOEFL B2+ certified English speaker, published author, and volunteer medical interpreter[cite: 1]. My purpose is to generate real value and positive impact in high-performance environments[cite: 1].</p>
+      <p><strong>Systems Engineering student (UTP, expected graduation December 2029) focused on Python backend development, data pipelines (ETL) and automation.</strong> Selected as <strong>UTP High Potential Scholar (2026)</strong> and <strong>Conecta Impulso Ambassador (Intercorp, 2026)</strong>.</p>
+      <p>I build modular, tested, installable Python tools: my main project is a CLI data pipeline with schema validation, per-category statistical anomaly detection, configurable behavior, rotating logs and 73 unit tests. Foundations in SQL, REST APIs, web scraping and JSON/XML come from the University of Michigan <em>Python for Everybody</em> specialization. Advanced Excel certifications (CCL, IDAT) complement my data analysis work.</p>
+      <p>Beyond tech: TOEFL iTP B2+, published author (2 books on Amazon, Spanish and English) and volunteer medical interpreter (32 hours, 2025).</p>
     </section>
     <section id="perfil-es" style="display:none;" class="fade-in" role="region" aria-labelledby="perfil-es-title">
       <h2 id="perfil-es-title">🔹 Perfil Profesional</h2>
-      <p>Estudiante de Ingeniería de Sistemas (UTP, Becario Alto Potencial 2026) y <strong>Embajador Conecta Impulso (Intercorp)</strong>[cite: 1]. Formación técnica en desarrollo backend (Python), pipelines de datos (ETL) y automatización[cite: 1]. Especializado en consumo de APIs REST, arquitectura de bases de datos relacionales y análisis de datos, orientado a construir soluciones tecnológicas escalables con impacto de negocio[cite: 1]. Cuenta con nivel de inglés avanzado (TOEFL B2+)[cite: 1], experiencia como intérprete médico voluntario[cite: 1] y autor publicado. Mi propósito es generar un impacto real y positivo en cada proyecto en el que participe[cite: 1].</p>
+      <p><strong>Estudiante de Ingeniería de Sistemas (UTP, egreso previsto en diciembre de 2029) enfocado en desarrollo backend con Python, pipelines de datos (ETL) y automatización.</strong> Becario Alto Potencial UTP (2026) y <strong>Embajador Conecta Impulso (Intercorp, 2026)</strong>.</p>
+      <p>Construyo herramientas en Python modulares, probadas e instalables: mi proyecto principal es un pipeline de datos por línea de comandos con validación de esquema, detección estadística de anomalías por categoría, comportamiento configurable, logs rotativos y 73 pruebas unitarias. Mis bases en SQL, APIs REST, web scraping y JSON/XML provienen de la especialización <em>Python for Everybody</em> (Universidad de Michigan). Las certificaciones avanzadas de Excel (CCL, IDAT) complementan mi trabajo de análisis de datos.</p>
+      <p>Adicionalmente: TOEFL iTP B2+, autor publicado (2 libros en Amazon, en español e inglés) e intérprete médico voluntario (32 horas, 2025).</p>
     </section>
-
+ 
+    <!-- PROYECTOS (priorizados para reclutadores técnicos) -->
+    <section id="proyectos-en" class="fade-in" role="region" aria-labelledby="proyectos-en-title">
+      <h2 id="proyectos-en-title">⭐ Projects</h2>
+ 
+      <h3>💻 Technical Projects</h3>
+      <ul class="project-list">
+        <li class="project-item">
+          <p><strong>2026 – Completed</strong></p>
+ 
+          <p>
+            <strong>Personal Expense Analysis System</strong> (CLI data pipeline)<br>
+            <span class="tech-stack">Python 3.10+ • pandas • NumPy • Matplotlib / Seaborn • openpyxl • pytest • Git</span>
+          </p>
+ 
+          <p>
+            Installable command-line tool that turns raw bank-export files into a statistical analysis and a shareable report. It runs a full ETL flow (ingestion → cleaning → analysis → visualization → reporting) and flags unusual transactions using a per-category z-score. Built as a practical project applying concepts from the <strong>Python for Everybody Specialization</strong> (University of Michigan) and <strong>Google IT Automation with Python</strong> coursework.
+          </p>
+ 
+          <ul>
+            <li><strong>Ingestion &amp; validation:</strong> reads <code>.csv</code>, <code>.xlsx</code> and <code>.xls</code>; checks 4 required columns, coerces types, removes duplicates and warns about skipped rows (invalid dates or amounts).</li>
+            <li><strong>Anomaly detection:</strong> per-category z-score (default threshold 2.0, configurable); categories with fewer than 3 transactions are skipped. On the included 21-transaction sample it flags a $2,400 Food charge against a $579.83 category mean.</li>
+            <li><strong>Outputs:</strong> 3 charts (bar, pie, monthly trend; 300 DPI by default) and a self-contained HTML report with base64-embedded images that opens offline.</li>
+            <li><strong>Engineering practices:</strong> ~1,350 lines of Python across 4 processing modules and 3 utility modules; argparse CLI with exit codes; <code>pyproject.toml</code> packaging; rotating logs (10 MB × 5 backups); deep-merge JSON configuration.</li>
+            <li><strong>Testing:</strong> 73 unit tests with pytest, covering reading, analysis, validation and configuration.</li>
+          </ul>
+ 
+          <p>
+            🔗 <a href="https://github.com/Zraght/expense_analyzer" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+          </p>
+        </li>
+      </ul>
+ 
+      <h3>✍️ Published Work</h3>
+      <ul>
+        <li>
+          <p><strong>February 2025</strong></p>
+          <p>
+            <strong>Books:</strong> The Value of Life | Traces of Hope<br>
+          </p>
+          <p><em>Published in Spanish and English on Amazon</em></p>
+ 
+          <p>
+            🔗 <a href="https://linktr.ee/joseantonio_gonzales" target="_blank" rel="noopener noreferrer">View complete work</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+ 
+    <section id="proyectos-es" style="display:none;" class="fade-in" role="region" aria-labelledby="proyectos-es-title">
+      <h2 id="proyectos-es-title">⭐ Proyectos</h2>
+ 
+      <h3>💻 Proyectos Técnicos</h3>
+      <ul class="project-list">
+        <li class="project-item">
+          <p><strong>2026 – Completado</strong></p>
+ 
+          <p>
+            <strong>Sistema de Análisis de Gastos Personales</strong> (pipeline de datos por CLI)<br>
+            <span class="tech-stack">Python 3.10+ • pandas • NumPy • Matplotlib / Seaborn • openpyxl • pytest • Git</span>
+          </p>
+ 
+          <p>
+            Herramienta de línea de comandos instalable que convierte archivos exportados del banco en un análisis estadístico y un reporte compartible. Ejecuta un flujo ETL completo (ingesta → limpieza → análisis → visualización → reporte) y detecta transacciones inusuales mediante z-score por categoría. Desarrollada como proyecto práctico aplicando conceptos de la <strong>Especialización Python for Everybody</strong> (Universidad de Michigan) y del curso <strong>Google IT Automation with Python</strong>.
+          </p>
+ 
+          <ul>
+            <li><strong>Ingesta y validación:</strong> lee <code>.csv</code>, <code>.xlsx</code> y <code>.xls</code>; verifica 4 columnas obligatorias, convierte tipos, elimina duplicados y advierte sobre filas omitidas (fechas o montos inválidos).</li>
+            <li><strong>Detección de anomalías:</strong> z-score por categoría (umbral por defecto 2.0, configurable); se omiten categorías con menos de 3 transacciones. En el ejemplo incluido de 21 transacciones marca un gasto de $2,400 en Food frente a una media de categoría de $579.83.</li>
+            <li><strong>Salidas:</strong> 3 gráficos (barras, pastel y tendencia mensual; 300 DPI por defecto) y un reporte HTML autocontenido con imágenes embebidas en base64 que abre sin conexión.</li>
+            <li><strong>Prácticas de ingeniería:</strong> ~1,350 líneas de Python en 4 módulos de procesamiento y 3 de utilidades; CLI con argparse y códigos de salida; empaquetado con <code>pyproject.toml</code>; logs rotativos (10 MB × 5 respaldos); configuración JSON con deep-merge.</li>
+            <li><strong>Pruebas:</strong> 73 pruebas unitarias con pytest que cubren lectura, análisis, validación y configuración.</li>
+          </ul>
+ 
+          <p>
+            🔗 <a href="https://github.com/Zraght/expense_analyzer" target="_blank" rel="noopener noreferrer">Ver Repositorio en GitHub</a>
+          </p>
+        </li>
+      </ul>
+ 
+      <h3>✍️ Obra Publicada</h3>
+      <ul>
+        <li>
+          <p><strong>Febrero 2025</strong></p>
+          <p>
+            <strong>Libros:</strong> El Valor de la Vida | Huellas de Esperanza
+          </p>
+          <p><em>Publicado en español e inglés en Amazon</em></p>
+ 
+          <p>
+            🔗 <a href="https://linktr.ee/joseantonio_gonzales" target="_blank" rel="noopener noreferrer">Ver obra completa</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+ 
+    <!-- TECHNICAL SKILLS -->
+    <section id="technical-skills-en" class="fade-in" role="region" aria-labelledby="technical-skills-en-title">
+      <h2 id="technical-skills-en-title">🔹 Technical Skills</h2>
+      <h3>Applied in my projects</h3>
+      <div class="soft-skills-grid">
+        <div class="skill-item">💻 <strong>Python (backend &amp; CLI tools)</strong></div>
+        <div class="skill-item">🔄 <strong>ETL Pipelines</strong></div>
+        <div class="skill-item">📊 <strong>Data Analysis (pandas, NumPy)</strong></div>
+        <div class="skill-item">📉 <strong>Statistical Anomaly Detection (z-score)</strong></div>
+        <div class="skill-item">📈 <strong>Data Visualization (Matplotlib, Seaborn)</strong></div>
+        <div class="skill-item">🧪 <strong>Unit Testing (pytest)</strong></div>
+        <div class="skill-item">⚙️ <strong>Automation &amp; Scripting</strong></div>
+        <div class="skill-item">🔧 <strong>Version Control (Git &amp; GitHub)</strong></div>
+        <div class="skill-item">📗 <strong>Advanced Excel</strong></div>
+      </div>
+      <h3>Foundations (coursework &amp; certifications)</h3>
+      <div class="soft-skills-grid">
+        <div class="skill-item">🗄️ <strong>SQL &amp; Relational Databases</strong></div>
+        <div class="skill-item">🌐 <strong>RESTful APIs &amp; Web Services</strong></div>
+        <div class="skill-item">🕷️ <strong>Web Scraping</strong></div>
+        <div class="skill-item">📄 <strong>JSON &amp; XML Data Handling</strong></div>
+        <div class="skill-item">🐧 <strong>Linux / Bash Fundamentals</strong></div>
+        <div class="skill-item">🐛 <strong>Debugging &amp; Problem Solving</strong></div>
+      </div>
+    </section>
+ 
+    <section id="technical-skills-es" style="display:none;" class="fade-in" role="region" aria-labelledby="technical-skills-es-title">
+      <h2 id="technical-skills-es-title">🔹 Habilidades Técnicas</h2>
+      <h3>Aplicadas en mis proyectos</h3>
+      <div class="soft-skills-grid">
+        <div class="skill-item">💻 <strong>Python (backend y herramientas CLI)</strong></div>
+        <div class="skill-item">🔄 <strong>Pipelines de Datos (ETL)</strong></div>
+        <div class="skill-item">📊 <strong>Análisis de Datos (pandas, NumPy)</strong></div>
+        <div class="skill-item">📉 <strong>Detección Estadística de Anomalías (z-score)</strong></div>
+        <div class="skill-item">📈 <strong>Visualización de Datos (Matplotlib, Seaborn)</strong></div>
+        <div class="skill-item">🧪 <strong>Pruebas Unitarias (pytest)</strong></div>
+        <div class="skill-item">⚙️ <strong>Automatización y Scripting</strong></div>
+        <div class="skill-item">🔧 <strong>Control de Versiones (Git y GitHub)</strong></div>
+        <div class="skill-item">📗 <strong>Excel Avanzado</strong></div>
+      </div>
+      <h3>Fundamentos (cursos y certificaciones)</h3>
+      <div class="soft-skills-grid">
+        <div class="skill-item">🗄️ <strong>SQL y Bases de Datos Relacionales</strong></div>
+        <div class="skill-item">🌐 <strong>APIs REST y Servicios Web</strong></div>
+        <div class="skill-item">🕷️ <strong>Web Scraping</strong></div>
+        <div class="skill-item">📄 <strong>Manejo de Datos JSON y XML</strong></div>
+        <div class="skill-item">🐧 <strong>Fundamentos de Linux / Bash</strong></div>
+        <div class="skill-item">🐛 <strong>Depuración y Resolución de Problemas</strong></div>
+      </div>
+    </section>
+ 
     <!-- FORMACIÓN ACADÉMICA Y CERTIFICACIONES -->
     <section id="formacion-en" class="fade-in" role="region" aria-labelledby="formacion-en-title">
       <h2 id="formacion-en-title">🔹 Academic Background, Distinctions & Certifications</h2>
-      
+ 
       <h3>🏆 Scholarships & Distinctions:</h3>
       <ul>
         <li>
           <strong>2026</strong><br>
           <strong>Conecta Impulso Ambassador</strong><br>
-          <em>Intercorp Group</em>[cite: 1]
+          <em>Intercorp Group</em>
           <ul>
-            <li>Distinction awarded to selected students for their high potential, leadership, and corporate vision[cite: 1].</li>
+            <li>Distinction awarded to selected students for their high potential, leadership, and corporate vision.</li>
           </ul>
         </li>
         <li>
           <strong>2026</strong><br>
           <strong>High Potential Scholarship (Academic Excellence & Leadership Program)</strong><br>
-          <em>UTP – Technological University of Peru</em>[cite: 1]
+          <em>UTP – Technological University of Peru</em>
           <ul>
-            <li>Merit-based recognition awarded to students demonstrating strong academic performance, leadership, and professional projection[cite: 1].</li>
-            <li>Selected through a competitive evaluation process[cite: 1].</li>
+            <li>Merit-based recognition awarded to students demonstrating strong academic performance, leadership, and professional projection.</li>
+            <li>Selected through a competitive evaluation process.</li>
           </ul>
         </li>
       </ul>
-
+ 
       <h3>🎓 Academic Education:</h3>
       <ul>
         <li>
-          <strong>2025 – ongoing</strong><br>
+          <strong>2025 – ongoing (expected graduation: December 2029)</strong><br>
           Systems and Computer Engineering<br>
-          <em>UTP – Universidad Tecnológica del Perú</em>[cite: 1]
+          <em>UTP – Universidad Tecnológica del Perú</em>
         </li>
         <li>
           <strong>2020–2024</strong><br>
@@ -612,30 +766,30 @@
           <em>Pioneer Christian School</em>
         </li>
       </ul>
-
+ 
       <h3>🌐 Languages:</h3>
       <ul>
         <li>
           <strong>March 2025</strong><br>
           TOEFL iTP (B2+ Certified)<br>
-          <em>ETS / ICPNA</em>[cite: 1]
+          <em>ETS / ICPNA</em>
         </li>
         <li>
           <strong>2023–2026</strong><br>
           Professional English Program – Completed<br>
-          <em>ICPNA</em>[cite: 1]
+          <em>ICPNA</em>
           <ul>
-            <li>Basic, Intermediate, and Advanced Levels[cite: 1]</li>
+            <li>Basic, Intermediate, and Advanced Levels</li>
           </ul>
         </li>
       </ul>
-
+ 
       <h3>🛠 Technical Certifications:</h3>
       <ul>
         <li>
           <strong>2026 – January</strong><br>
           <strong>Python for Everybody - Specialization Certificate</strong><br>
-          <em>University of Michigan</em>[cite: 1]
+          <em>University of Michigan</em>
           <p class="course-list-intro"><strong>Courses included:</strong></p>
           <ul>
             <li>Python basics and programming fundamentals</li>
@@ -646,11 +800,10 @@
           🔗 <a href="https://www.coursera.org/account/accomplishments/verify/0ONBLQOIS44A" target="_blank" rel="noopener noreferrer">View Certificate Credential</a>
         </li>
         <li>
-
           <strong>July 2026</strong><br>
           <strong>Specialized Excel (Basic, Intermediate and Advanced)</strong><br>
-          <em>IDAT — Microsoft Backed Certification</em>[cite: 1]
-          <p>Advanced data management, analytics tools, and business reporting[cite: 1].</p>
+          <em>IDAT — Microsoft Backed Certification</em>
+          <p>Advanced data management, analytics tools, and business reporting.</p>
           🔗 <a href="https://wallet.xertify.co/certificates/00E3B34DA002" target="_blank" rel="noopener noreferrer">View Certificate Credential</a>
         </li>
         <li>
@@ -670,36 +823,36 @@
         </li>
       </ul>
     </section>
-
+ 
     <section id="formacion-es" style="display:none;" class="fade-in" role="region" aria-labelledby="formacion-es-title">
       <h2 id="formacion-es-title">🔹 Formación Académica, Distinciones y Certificaciones</h2>
-      
+ 
       <h3>🏆 Becas y Distinciones:</h3>
       <ul>
         <li>
           <strong>2026</strong><br>
           <strong>Embajador - Conecta Impulso</strong><br>
-          <em>Grupo Intercorp</em>[cite: 1]
+          <em>Grupo Intercorp</em>
           <ul>
-            <li>Distinción del Grupo Intercorp otorgada a estudiantes seleccionados por su alto potencial, liderazgo y visión corporativa[cite: 1].</li>
+            <li>Distinción del Grupo Intercorp otorgada a estudiantes seleccionados por su alto potencial, liderazgo y visión corporativa.</li>
           </ul>
         </li>
         <li>
           <strong>2026</strong><br>
           <strong>Beca Alto Potencial (Programa de Excelencia Académica y Liderazgo)</strong><br>
-          <em>UTP – Universidad Tecnológica del Perú</em>[cite: 1]
+          <em>UTP – Universidad Tecnológica del Perú</em>
           <ul>
-            <li>Reconocimiento otorgado mediante un proceso competitivo a estudiantes con alto rendimiento académico, liderazgo y proyección profesional[cite: 1].</li>
+            <li>Reconocimiento otorgado mediante un proceso competitivo a estudiantes con alto rendimiento académico, liderazgo y proyección profesional.</li>
           </ul>
         </li>
       </ul>
-
+ 
       <h3>🎓 Formación Académica:</h3>
       <ul>
         <li>
-          <strong>2025 – en curso</strong><br>
+          <strong>2025 – en curso (egreso previsto: diciembre de 2029)</strong><br>
           Ingeniería de Sistemas e Informática<br>
-          <em>UTP – Universidad Tecnológica del Perú</em>[cite: 1]
+          <em>UTP – Universidad Tecnológica del Perú</em>
         </li>
         <li>
           <strong>2020–2024</strong><br>
@@ -707,24 +860,24 @@
           <em>IE Cristiano Pionero</em>
         </li>
       </ul>
-
+ 
       <h3>🌐 Idiomas:</h3>
       <ul>
         <li>
           <strong>Marzo 2025</strong><br>
           TOEFL iTP (Certificación B2+)<br>
-          <em>ETS / ICPNA</em>[cite: 1]
+          <em>ETS / ICPNA</em>
         </li>
         <li>
           <strong>2023–2026</strong><br>
           Programa Profesional de Inglés – Completado<br>
-          <em>ICPNA</em>[cite: 1]
+          <em>ICPNA</em>
           <ul>
-            <li>Niveles Básico, Intermedio y Avanzado[cite: 1]</li>
+            <li>Niveles Básico, Intermedio y Avanzado</li>
           </ul>
         </li>
       </ul>
-
+ 
       <h3>🛠 Certificaciones Técnicas:</h3>
       <ul>
         <li>
@@ -743,8 +896,8 @@
         <li>
           <strong>Julio 2026</strong><br>
           <strong>Excel Especializado (Básico, Intermedio y Avanzado)</strong><br>
-          <em>IDAT — Certificación respaldada por Microsoft</em>[cite: 1]
-          <p>Manejo avanzado de datos, herramientas de análisis y reportes de negocio[cite: 1].</p>
+          <em>IDAT — Certificación respaldada por Microsoft</em>
+          <p>Manejo avanzado de datos, herramientas de análisis y reportes de negocio.</p>
           🔗 <a href="https://wallet.xertify.co/certificates/00E3B34DA002" target="_blank" rel="noopener noreferrer">Ver Credencial de Certificado</a>
         </li>
         <li>
@@ -764,178 +917,46 @@
         </li>
       </ul>
     </section>
-
-    <!-- TECHNICAL SKILLS -->
-    <section id="technical-skills-en" class="fade-in" role="region" aria-labelledby="technical-skills-en-title">
-      <h2 id="technical-skills-en-title">🔹 Technical Skills</h2>
-      <div class="soft-skills-grid">
-        <div class="skill-item">💻 <strong>Backend Development (Python)</strong></div>
-        <div class="skill-item">⚙️ <strong>Automation & Scripting</strong></div>
-        <div class="skill-item">🔄 <strong>ETL Pipelines</strong></div>
-        <div class="skill-item">🔧 <strong>Version Control (Git & GitHub)</strong></div>
-        <div class="skill-item">🐧 <strong>Linux / Bash Fundamentals</strong></div>
-        <div class="skill-item">📊 <strong>Data Analysis & Processing</strong></div>
-        <div class="skill-item">🗄️ <strong>SQL & Relational Databases</strong></div>
-        <div class="skill-item">🌐 <strong>RESTful APIs & Web Services</strong></div>
-        <div class="skill-item">🕷️ <strong>Web Scraping</strong></div>
-        <div class="skill-item">📄 <strong>JSON & XML Data Handling</strong></div>
-        <div class="skill-item">📈 <strong>Data Visualization</strong></div>
-        <div class="skill-item">🐛 <strong>Debugging & Problem Solving</strong></div>
-      </div>
-    </section>
-
-    <section id="technical-skills-es" style="display:none;" class="fade-in" role="region" aria-labelledby="technical-skills-es-title">
-      <h2 id="technical-skills-es-title">🔹 Habilidades Técnicas</h2>
-      <div class="soft-skills-grid">
-        <div class="skill-item">💻 <strong>Desarrollo Backend (Python)</strong></div>
-        <div class="skill-item">⚙️ <strong>Automatización y Scripting</strong></div>
-        <div class="skill-item">🔄 <strong>Pipelines de Datos (ETL)</strong></div>
-        <div class="skill-item">🔧 <strong>Control de Versiones (Git y GitHub)</strong></div>
-        <div class="skill-item">🐧 <strong>Fundamentos de Linux / Bash</strong></div>
-        <div class="skill-item">📊 <strong>Análisis y Procesamiento de Datos</strong></div>
-        <div class="skill-item">🗄️ <strong>SQL y Bases de Datos Relacionales</strong></div>
-        <div class="skill-item">🌐 <strong>APIs REST y Servicios Web</strong></div>
-        <div class="skill-item">🕷️ <strong>Web Scraping</strong></div>
-        <div class="skill-item">📄 <strong>Manejo de Datos JSON y XML</strong></div>
-        <div class="skill-item">📈 <strong>Visualización de Datos</strong></div>
-        <div class="skill-item">🐛 <strong>Depuración y Resolución de Problemas</strong></div>
-      </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="proyectos-en" class="fade-in" role="region" aria-labelledby="proyectos-en-title">
-      <h2 id="proyectos-en-title">⭐ Projects</h2>
-      
-      <h3>💻 Technical Projects</h3>
-      <ul class="project-list">
-        <li class="project-item">
-          <p><strong>2026 – Completed</strong></p>
-
-          <p>
-            <strong>Personal Expense Analysis System</strong><br>
-            <span class="tech-stack">Python • Automation • Data Analysis • Visualization</span>
-          </p>
-
-          <p>
-            Developed a Python-based personal expense analysis system as a practical project integrating concepts from the <strong>Python for Everybody Specialization</strong> (University of Michigan) and the <strong>Google IT Automation with Python Professional Certificate</strong>. The system implements a full ETL pipeline that processes CSV/Excel files, runs automated statistical analysis with per-category z-score anomaly detection, generates three chart types, and produces a portable self-contained HTML report. The project applies professional software engineering patterns aligned with real-world data pipeline workflows.
-          </p>
-
-          <ul>
-            <li>Full ETL pipeline with ingestion, cleaning, schema validation, and type coercion</li>
-            <li>Per-category z-score anomaly detection to flag statistically unusual transactions</li>
-            <li>Automated generation of bar, pie, and monthly trend charts at 300 DPI</li>
-            <li>Self-contained HTML report with base64-embedded images and no external dependencies</li>
-            <li>Modular architecture with rotating logs, deep-merge JSON config, and 73 unit tests</li>
-          </ul>
-
-          <p>
-            🔗 <a href="https://github.com/Zraght/expense_analyzer#" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-          </p>
-        </li>
-      </ul>
-
-      <h3>✍️ Published Work</h3>
-      <ul>
-        <li>
-          <p><strong>February 2025</strong></p>
-          <p>
-            <strong>Books:</strong> The Value of Life | Traces of Hope<br>
-          </p>
-          <p><em>Published in Spanish and English on Amazon</em></p>
-
-          <p>
-            🔗 <a href="https://linktr.ee/joseantonio_gonzales" target="_blank" rel="noopener noreferrer">View complete work</a>
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="proyectos-es" style="display:none;" class="fade-in" role="region" aria-labelledby="proyectos-es-title">
-      <h2 id="proyectos-es-title">⭐ Proyectos</h2>
-      
-      <h3>💻 Proyectos Técnicos</h3>
-      <ul class="project-list">
-        <li class="project-item">
-          <p><strong>2026 – Completado</strong></p>
-
-          <p>
-            <strong>Sistema de Análisis de Gastos Personales</strong><br>
-            <span class="tech-stack">Python • Automatización • Análisis de Datos • Visualización</span>
-          </p>
-
-          <p>
-            Desarrollé un sistema de análisis de gastos personales en Python como proyecto práctico que integra conceptos de la <strong>Especialización Python for Everybody</strong> (Universidad de Michigan) y el <strong>Certificado Profesional Google IT Automation with Python</strong>. El sistema implementa un pipeline ETL completo que procesa archivos CSV/Excel, ejecuta análisis estadístico automatizado con detección de anomalías por z-score por categoría, genera tres tipos de visualizaciones y produce un reporte HTML autocontenido portable. El proyecto aplica patrones de ingeniería de software profesionales orientados a pipelines de datos reales.
-          </p>
-
-          <ul>
-            <li>Pipeline ETL completo con ingesta, limpieza, validación de esquema y coerción de tipos</li>
-            <li>Detección estadística de anomalías por z-score específica por categoría de gasto</li>
-            <li>Generación automatizada de gráficos de barras, pastel y tendencia mensual (300 DPI)</li>
-            <li>Reporte HTML autocontenido con imágenes embebidas en base64, sin dependencias externas</li>
-            <li>Arquitectura modular con logging rotativo, configuración JSON con deep-merge y 73 pruebas unitarias</li>
-          </ul>
-
-          <p>
-            🔗 <a href="https://github.com/Zraght/expense_analyzer#" target="_blank" rel="noopener noreferrer">Ver Repositorio en GitHub</a>
-          </p>
-        </li>
-      </ul>
-
-      <h3>✍️ Obra Publicada</h3>
-      <ul>
-        <li>
-          <p><strong>Febrero 2025</strong></p>
-          <p>
-            <strong>Libros:</strong> El Valor de la Vida | Huellas de Esperanza
-          </p>
-          <p><em>Publicado en español e inglés en Amazon</em></p>
-
-          <p>
-            🔗 <a href="https://linktr.ee/joseantonio_gonzales" target="_blank" rel="noopener noreferrer">Ver obra completa</a>
-          </p>
-        </li>
-      </ul>
-    </section>
-
+ 
     <!-- EXPERIENCIA LABORAL -->
     <section id="experiencia-en" class="fade-in" role="region" aria-labelledby="experiencia-en-title">
       <h2 id="experiencia-en-title">🔹 Work Experience</h2>
-      
+ 
       <h3>🌐 International Medical Translation:</h3>
       <ul>
         <li>
           <strong>English Interpreter</strong><br>
           <em>Medical Missions Outreach / Medical Missions Research</em><br>
-          <strong>June 2024 / April 2025</strong>
+          <strong>March 28 – April 1, 2025 · 32 hours (5 calendar days)</strong>
           <ul>
-            <li>Simultaneous translation between Spanish-speaking patients and American medical staff</li>
+            <li>Simultaneous interpreting between Spanish-speaking patients and American medical staff</li>
             <li>Coordination with the care team for patient flow management</li>
-            <li>Intensive shifts from 8am to 5pm for five consecutive days</li>
-            <li>Symbolic compensation for outstanding performance</li>
-            <li>Received certificates of recognition for outstanding performance</li>
+            <li>Intensive daily shifts (8am–5pm schedule) over five consecutive calendar days, totaling 32 hours of interpreting</li>
+            <li>Symbolic compensation and certificates of recognition for outstanding performance</li>
           </ul>
         </li>
       </ul>
-
+    </section>
+ 
     <section id="experiencia-es" style="display:none;" class="fade-in" role="region" aria-labelledby="experiencia-es-title">
       <h2 id="experiencia-es-title">🔹 Experiencia Laboral</h2>
-      
+ 
       <h3>🌐 Traducción Médica Internacional:</h3>
       <ul>
         <li>
           <strong>English Interpreter</strong><br>
           <em>Medical Missions Outreach / Medical Missions Research</em><br>
-          <strong>Junio 2024 / Abril 2025</strong>
+          <strong>28 de marzo – 1 de abril de 2025 · 32 horas (5 días calendario)</strong>
           <ul>
-            <li>Traducción simultánea entre pacientes hispanohablantes y personal médico estadounidense</li>
+            <li>Interpretación simultánea entre pacientes hispanohablantes y personal médico estadounidense</li>
             <li>Coordinación con el equipo de atención para la gestión del flujo de pacientes</li>
-            <li>Turnos intensivos de 8am a 5pm durante cinco días consecutivos</li>
-            <li>Compensación simbólica por desempeño destacado</li>
-            <li>Recibí certificados de reconocimiento por desempeño destacado</li>
+            <li>Turnos intensivos diarios (horario de 8am a 5pm) durante cinco días calendario consecutivos, con un total de 32 horas de interpretación</li>
+            <li>Compensación simbólica y certificados de reconocimiento por desempeño destacado</li>
           </ul>
         </li>
       </ul>
-
+    </section>
+ 
     <!-- HABILIDADES BLANDAS -->
     <section id="habilidades-en" class="fade-in" role="region" aria-labelledby="habilidades-en-title">
       <h2 id="habilidades-en-title">🔹 Soft Skills & Leadership</h2>
